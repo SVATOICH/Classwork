@@ -1,0 +1,33 @@
+#1
+number = int(input("Введите число"))
+if number > 0:
+    print("Больше нуля")
+elif number == 0:
+    print("Равно нулю")
+else:
+    print("Меньше нуля")
+
+#2
+number = int(input("Введите число"))
+if number > 0:
+    print("1")
+elif number == 0:
+    print("0")
+else:
+    print("-1")
+
+#3
+S = input("Введите фигуру: треугольник, квадрат, прямоугольник")
+if S == "треугольник":
+    a = int(input("Введите a"))
+    h = int(input("Введите h"))
+    print(0.5 * a * h)
+elif S == "квадрат":
+    a = int(input("Введите a"))
+    print(a * a)
+elif S == "прямоугольник"
+    a = int(input("Введите a"))
+    b = int(input("Введите b"))
+    print(a * b)
+else:
+    print("Такой фигуры нет")
