@@ -1,5 +1,4 @@
 # Задание 1
-
 num1 = int(input("Введите первое число"))
 num2 = int(input("Введите второе число"))
 if num1 == 0 or num2 == 0:
@@ -13,9 +12,7 @@ else:
     smaller_num = min(num1, num2)
     print("Разница между числами", larger_num, "и", smaller_num, "это", larger_num - smaller_num)
 
-
 # Задание 2
-
 num1 = int(input("Введите первое число :"))
 num2 = int(input("Введите втоое число="))
 if num1 > 0 and num2 < 0 :
@@ -31,7 +28,6 @@ else:
         print(f"Разница между двумя числами {result}")
         
 # Доп задание
-
 letter = int(input("Введите количество писем"))
 if letter > 100:
     print("Сделать рассылку")
