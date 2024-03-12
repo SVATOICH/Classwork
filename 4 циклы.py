@@ -6,6 +6,7 @@ todo_list.append("Погулять с собакой")
 print(todo_list)
 for item in todo_list:
     print(item)
+
 #2.
 shopping_list = ["Яблоки", "Молоко", "Хлеб", "Мясо", "Яйца"]
 for item in shopping_list:
@@ -13,12 +14,14 @@ for item in shopping_list:
         print(f"Купить {item} в количестве 2 шт.")
     else:
         print(f"Купить {item} в количестве 1 шт.)
+
 #3.
 n = int(input("Введите число"))
 x = ""
 for i in range(1, n+1):
     x = x + str(i)
     print(x)
+
 #Доп. Задание
 password_list = ["qwerty123", "qwerty", "qwe"]
 password = input("Введите пароль")
@@ -40,6 +43,7 @@ while i < len(string):
 print("\nИспользование цикла for:")
 for char in string:
     print(f"{char} : {ord(char)}")
+
 #2.
 n = int(input("Введите число больше нуля"))
 while n <= 0:
@@ -49,6 +53,7 @@ sum_of_squares = 0
 for i in range(1, n+1):
     sum_of_squares += i**2
 print("Сумма квадратов числа от 0 до", n, "это", sum_of_squares)
+
 #3.
 word = "бензин"
 i = 3
@@ -63,6 +68,7 @@ while i > 0:
         print("Осталось попыток:", i)
     if i == 0:
         print("Попытки закончились, слово - бензин")
+
 #1.
 all_keys = ['red key', 'blue key', 'golden key', 'red key', 'blue key', 'white key', 'golden key']
 i = 0
@@ -70,6 +76,7 @@ for item in all_keys:
     if item == "golden key":
         i += 1
         print("True,", "встречается раз:", i)
+
 #2.
 message = '6_185+_7*/#4i/*(@n'
 m = ""
@@ -105,6 +112,7 @@ for i in message:
     elif i == "@":
         m += "ь"
 print(m)
+
 #3.
 count = 0
 while count < 4:
@@ -136,3 +144,48 @@ elif p3 < p4:
     print("2 прямоугольник больше")
 else:
     ("1 прямоугольник больше")
+
+#1.
+random_string = 'f1ix_ER8ROR_in_l1ine_&_an7d_B8UG._in_C61o0de!'
+correct_string = ""
+i = 0
+for item in random_string:
+    if item not in ("01234567890&."):
+        correct_string = correct_string + item
+correct_string1 = correct_string.replace("_", " ")
+correct_string2 = correct_string1.replace("  ", "")
+print(correct_string2)
+
+#2.
+word = input("Введите слово")
+a = (ёуеаоэяию)
+count = 0
+for item in word:
+    if item in a:
+        count += 1
+print(count)
+
+#3.
+random_elements = [3, 6, -9, '-5', 'str', list, 'elem', None, -1, 10, str]
+count = 0
+b = ""
+for a in random_elements:
+    if isinstance(a, int):
+        count += 1
+        if a < 0:
+            count -= 1
+print(count, -9-5-1)
+
+#4.
+n = int(input("Введите число"))
+for i in range (1, 11):
+    print(i * (n-1))
+    print(i * n)
+    print(i * (n+1))
+
+#5.
+i = 0
+while i < 50:
+    a = int(input("Введите число"))
+    if i < 50:
+        i += a
