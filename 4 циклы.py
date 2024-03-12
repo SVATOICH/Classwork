@@ -1,3 +1,4 @@
+#for
 #1. 
 todo_list = ["Приготовить завтрак", "Сходить в магазин", "Выполнить домашнее задание"]
 for item in todo_list:
@@ -33,6 +34,7 @@ for item in password_list:
     elif item == password and item == "qwe":
         print("Пароль верный, доступ 1")
 
+#while
 #1.
 string = input("Введите строку:")
 print("Используется цикл while:0")
@@ -69,6 +71,7 @@ while i > 0:
     if i == 0:
         print("Попытки закончились, слово - бензин")
 
+#Циклы
 #1.
 all_keys = ['red key', 'blue key', 'golden key', 'red key', 'blue key', 'white key', 'golden key']
 i = 0
@@ -145,6 +148,7 @@ elif p3 < p4:
 else:
     ("1 прямоугольник больше")
 
+#Циклы 2
 #1.
 random_string = 'f1ix_ER8ROR_in_l1ine_&_an7d_B8UG._in_C61o0de!'
 correct_string = ""
